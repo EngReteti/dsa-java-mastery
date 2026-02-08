@@ -1,2 +1,36 @@
-# dsa-java-mastery
-A systematic documentation of Data Structures and Algorithms implemented in Java, focusing on time complexity and logic..
+# 🧠 DSA Java Mastery: 7-Day Logic Intensive
+
+A systematic implementation of core Data Structures and Algorithms in Java. This repository serves as a technical laboratory for mastering memory management, pointer logic, and computational efficiency.
+
+## 🎯 Learning Objectives
+* **Efficiency**: Evaluating time and space complexity using Big O notation.
+* **Data Modeling**: Choosing the correct structure (Arrays vs. Nodes) for specific problems.
+* **Clean Code**: Adopting professional Java conventions and modular architecture.
+
+
+## 📅 7-Day Roadmap & Progress
+- [x] **Day 1: Arrays** - Search, Insertion, Deletion, and Traversal logic.
+- [ ] **Day 2: Singly Linked Lists** - Node class, Beginning/End insertion, and Display.
+- [ ] **Day 3: Stacks** - Implementing LIFO logic using Linked Lists (Push, Pop, Peek).
+- [ ] **Day 4: Queues** - Implementing FIFO logic using Linked Lists (Enqueue, Dequeue).
+- [ ] **Day 5: Sorting Algorithms** - Bubble, Selection, Merge, and Quick Sort.
+- [ ] **Day 6: Trees (Binary Tree)** - Node logic and In-order, Pre-order, Post-order traversals.
+- [ ] **Day 7: Graph Basics** - Adjacency lists and BFS/DFS traversal logic.
+
+
+## 📂 Repository Architecture
+```text
+src/
+├── arrays/          # Index-based contiguous memory logic
+├── linkedlists/     # Dynamic node-based structures
+├── stacks/          # LIFO (Last-In-First-Out) implementations
+├── queues/          # FIFO (First-In-First-Out) implementations
+├── sorting/         # Comparison-based sorting algorithms
+├── trees/           # Hierarchical data structures
+└── graphs/          # Network and relationship modeling
+
+🛠️ Execution
+Compile and run any module using the following pattern:
+javac src/[topic]/[FileName].java
+java -cp src/[topic] [FileName]
+Developed as part of the Logic Nexus initiative by EngReteti.
