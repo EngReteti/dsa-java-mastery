@@ -12,7 +12,7 @@ A systematic implementation of core Data Structures and Algorithms in Java. This
 - [x] **Day 1: Arrays** - Search, Insertion, Deletion, and Traversal logic.
 - [x] **Day 2: Singly Linked Lists** - Node class, Beginning/End insertion, and Display.
 - [x] **Day 3: Stacks** - Implementing LIFO logic using Linked Lists (Push, Pop, Peek).
-- [ ] **Day 4: Queues** - Implementing FIFO logic using Linked Lists (Enqueue, Dequeue).
+- [x] **Day 4: Queues** - Implementing FIFO logic using Linked Lists (Enqueue, Dequeue).
 - [ ] **Day 5: Sorting Algorithms** - Bubble, Selection, Merge, and Quick Sort.
 - [ ] **Day 6: Trees (Binary Tree)** - Node logic and In-order, Pre-order, Post-order traversals.
 - [ ] **Day 7: Graph Basics** - Adjacency lists and BFS/DFS traversal logic.
