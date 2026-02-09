@@ -1,4 +1,4 @@
-package day03_stacks;
+package stacks;
 
 /**
  * Objective: Build a Stack from scratch using an Array
