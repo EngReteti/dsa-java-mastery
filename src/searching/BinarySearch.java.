@@ -1,0 +1,32 @@
+package searching;
+
+/**
+ * Binary Search: Efficiently finding an element in a SORTED array.
+ */
+public class BinarySearch {
+    public static int search(int[] arr, int low, int high, int target) {
+        if (high >= low) {
+            int mid = low + (high - low) / 2;
+
+            // Found the target
+            if (arr[mid] == target) return mid;
+
+            // Target is smaller, look in the left half
+            if (arr[mid] > target) {
+                return search(arr, low, mid - 1, target);
+            }
+
+            // Target is larger, look in the right half
+            return search(arr, mid + 1, high, target);
+        }
+        return -1; // Target not found
+    }
+
+    public static void main(String[] args) {
+        int[] data = {3, 9, 10, 27, 38, 43, 82}; // Must be sorted
+        int target = 43;
+        int result = search(data, 0, data.length - 1, target);
+        System.out.println("Element found at index: " + result);
+    }
+}
+
