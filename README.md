@@ -10,7 +10,7 @@ A systematic implementation of core Data Structures and Algorithms in Java. This
 
 ## 📅 7-Day Roadmap & Progress
 - [x] Day 1: Arrays - Search, Insertion, Deletion, and Traversal logic. ✅ ![Proof](docs/arrays_run.jpg)
-- [x] Day 2: Singly Linked Lists - ✅ ![Proof](docs/linkedlists_run.jpg)
+- [x] Day 2: Singly Linked Lists - Node class, Beginning/End insertion, and Display. ✅ ![Proof](docs/linkedlists_run.jpg)
 - [x] Day 3: Stacks - ✅ ![Proof](docs/stacks_run.jpg)
 - [x] Day 4: Queues - ✅ ![Proof](docs/queues_run.jpg)
 - [x] Day 5: Searching algorithms - linear search, binary search. ✅ ![Execution Proof](docs/searching_run.jpg)
