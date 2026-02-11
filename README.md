@@ -35,3 +35,16 @@ Compile and run any module using the following pattern:
 javac src/[topic]/[FileName].java
 java -cp src/[topic] [FileName]
 Developed as part of the Logic Nexus initiative by EngReteti.
+
+---
+
+## 📸 System Gallery (Proof of Work)
+
+| Feature | Visual Preview |
+| :--- | :--- |
+| **Linked List Operations** | ![Singly Linked List Proof](docs/linkedlists_run.jpg) |
+| **Stack (LIFO) Logic** | ![Stack Proof](docs/stacks_run.jpg) |
+| **Queue (FIFO) Logic** | ![Queue Proof](docs/queues_run.jpg) |
+| **Searching & Sorting** | <img src="docs/searching_run.jpg" width="400"> <br> <img src="docs/sorting_run.jpg" width="400"> |
+| **Tree Traversals** | ![Tree Proof](docs/trees_run.jpg) |
+| **Graph BFS/DFS** | ![Graph Proof](docs/graphs_run.jpg) |
