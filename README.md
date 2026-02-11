@@ -9,7 +9,7 @@ A systematic implementation of core Data Structures and Algorithms in Java. This
 
 
 ## 📅 7-Day Roadmap & Progress
-- [x] Day 1: Arrays - Search, Insertion, Deletion, and Traversal logic.
+- [x] Day 1: Arrays - ✅ ![Proof](docs/arrays_run.jpg)
 - [x] Day 2: Singly Linked Lists - Node class, Beginning/End insertion, and Display.
 - [x] Day 3: Stacks - Implementing LIFO logic using Linked Lists (Push, Pop, Peek).
 - [x] Day 4: Queues - Implementing FIFO logic using Linked Lists (Enqueue, Dequeue).
