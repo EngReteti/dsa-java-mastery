@@ -12,7 +12,7 @@ A systematic implementation of core Data Structures and Algorithms in Java. This
 - [x] Day 1: Arrays - ✅ ![Proof](docs/arrays_run.jpg)
 - [x] Day 2: Singly Linked Lists - ✅ ![Proof](docs/linkedlists_run.jpg)
 - [x] Day 3: Stacks - ✅ ![Proof](docs/stacks_run.jpg)
-- [x] Day 4: Queues - Implementing FIFO logic using Linked Lists (Enqueue, Dequeue).
+- [x] Day 4: Queues - ✅ ![Proof](docs/queues_run.jpg)
 - [x] Day 5: Searching algorithms - linear search, binary search.
              : Sorting Algorithms - Bubble, Selection, Merge, and Quick Sort.
 - [ ] Day 6: Trees (Binary Tree) - Node logic and In-order, Pre-order, Post-order traversals.
