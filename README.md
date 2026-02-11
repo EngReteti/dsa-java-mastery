@@ -15,7 +15,7 @@ A systematic implementation of core Data Structures and Algorithms in Java. This
 ✅ Day 4: Queues - Implementing FIFO logic using Linked Lists (Enqueue, Dequeue). ![Proof](docs/queues_run.jpg)
 ✅ Day 5: Searching algorithms - linear search, binary search. : Sorting Algorithms - Bubble, Selection, Merge, and Quick Sort. ![Search Proof](docs/searching_run.jpg) ![Sort Proof](docs/sorting_run.jpg)
              : Sorting Algorithms - Bubble, Selection, Merge, and Quick Sort.
-- [ ] Day 6: Trees (Binary Tree) - Node logic and In-order, Pre-order, Post-order traversals.
+✅ Day 6: Trees (Binary Tree) - Node logic and In-order, Pre-order, Post-order traversals. ![Proof](docs/trees_run.jpg)
 - [ ] Day 7: Graph Basics - Adjacency lists and BFS/DFS traversal logic.
 
 
