@@ -1,15 +1,17 @@
-# 🚀 DSA Java Mastery: 7-Day Logic Laboratory
+# 🚀 DSA Java Mastery: Logic Laboratory
 
-A structured journey through Data Structures and Algorithms implemented in Java via Termux.
+A high-performance repository demonstrating the implementation of fundamental Data Structures and Algorithms (DSA) using Java. This project serves as a technical showcase of algorithmic efficiency, memory management, and clean code principles.
 
-## 📅 Roadmap Overview
-* **Day 1:** Array Operations (CRUD) ✅
-* **Day 2:** Singly Linked Lists ✅
-* **Day 3:** Stacks (LIFO) ✅
-* **Day 4:** Queues (FIFO) ✅
-* **Day 5:** Searching & Sorting ✅
-* **Day 6:** Binary Trees ✅
-* **Day 7:** Graphs (BFS/DFS) ✅
+## 🎯 Technical Objectives
+* **Algorithm Optimization:** Implementing search and sort logic with a focus on Big O notation and time/space complexity.
+* **Memory Management:** Building custom data structures (Linked Lists, Trees, Graphs) to understand pointer manipulation and heap/stack allocation.
+* **Technical Proficiency:** Demonstrating mastery of the Java Collections Framework and Object-Oriented Programming (OOP).
+
+## 🛠️ Core Competencies
+* **Linear Data Structures:** Arrays, Singly Linked Lists, Stacks (LIFO), and Queues (FIFO).
+* **Non-Linear Data Structures:** Binary Search Trees (BST) and Directed/Undirected Graphs.
+* **Traversal & Search:** BFS/DFS, Linear Search, and Binary Search.
+* **Sorting Efficiency:** Bubble Sort, Selection Sort, and foundational understanding of Merge/Quick Sort.
 
 ---
 
