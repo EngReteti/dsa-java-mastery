@@ -29,3 +29,24 @@ A high-performance repository demonstrating the implementation of fundamental Da
 | **Graph BFS/DFS** | ![Graph Proof](docs/graphs_run.jpg) |
 
 ---
+
+## 🚀 Getting Started
+
+### Prerequisites
+* **Java Development Kit (JDK):** Version 8 or higher.
+* **Terminal/CLI:** Termux (Android), CMD, or Bash.
+
+### Installation & Execution
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/dsa-java-mastery.git
+   cd dsa-java-mastery
+   ```
+
+2. **Compile and Run a specific module (e.g., Trees):**
+   ```bash
+   javac src/trees/BinaryTree.java
+   java -cp src trees.BinaryTree
+   ```
+
+> **Note:** Each directory contains an independent implementation of the data structure for modular testing.
