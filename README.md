@@ -1,6 +1,8 @@
 # 🚀 DSA Java Mastery: Logic Laboratory
 ![Java](https://img.shields.io/badge/Language-Java-orange) ![Tools](https://img.shields.io/badge/Environment-Termux-blue) ![Status](https://img.shields.io/badge/Status-Complete-green)
 
+![Java](https://img.shields.io/badge/Language-Java-orange) ![Tools](https://img.shields.io/badge/Environment-Termux-blue) ![Status](https://img.shields.io/badge/Status-Complete-green)
+
 A high-performance repository demonstrating the implementation of fundamental Data Structures and Algorithms (DSA) using Java.
 
 ## 🎯 Technical Objectives
@@ -49,3 +51,13 @@ A high-performance repository demonstrating the implementation of fundamental Da
    javac src/graphs/GraphOperations.java
    java -cp src graphs.GraphOperations
    ```
+
+## 💡 Technical Challenges & Solutions
+
+### 1. Robust Data Handling
+**Challenge:** Initial implementations would crash (NullPointerException) when attempting to remove elements from empty Stacks or Queues.
+**Solution:** Implemented **Defensive Programming** by adding state-checks. Now, the system returns a graceful "Underflow" warning instead of terminating.
+
+### 2. Algorithmic Efficiency
+**Challenge:** Choosing between Linear and Binary Search for data retrieval.
+**Solution:** Optimized retrieval by implementing Binary Search for sorted datasets, reducing time complexity from (n)$ to (\log n)$.
