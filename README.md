@@ -8,6 +8,17 @@ A high-performance repository demonstrating the implementation of fundamental Da
 * **Technical Proficiency:** Demonstrating mastery of the Java Collections Framework and Object-Oriented Programming (OOP).
 
 ## 🛠️ Core Competencies
+
+## 📊 Complexity Analysis (Efficiency Standards)
+
+| Data Structure | Best Case | Average Case | Space Complexity |
+| :--- | :--- | :--- | :--- |
+| **Array (Search)** | (1)$ | (n)$ | (1)$ |
+| **Binary Search** | (1)$ | (\log n)$ | (1)$ |
+| **Bubble Sort** | (n)$ | (n^2)$ | (1)$ |
+| **BST (Search)** | (1)$ | (\log n)$ | (n)$ |
+| **Graph (BFS/DFS)** | (V+E)$ | (V+E)$ | (V)$ |
+
 * **Linear Data Structures:** Arrays, Singly Linked Lists, Stacks (LIFO), and Queues (FIFO).
 * **Non-Linear Data Structures:** Binary Search Trees (BST) and Directed/Undirected Graphs.
 * **Traversal & Search:** BFS/DFS, Linear Search, and Binary Search.

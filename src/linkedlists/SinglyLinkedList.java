@@ -1,17 +1,22 @@
 class Node {
     int data;
     Node next;
-
-    Node(int data) {
-        this.data = data;
-        this.next = null;
-    }
+    Node(int data) { this.data = data; this.next = null; }
 }
 
 public class SinglyLinkedList {
-    Node head = null;
+    private Node head = null;
 
-    public void insert(int data) {
+    // 1. Beginning Insertion
+    public void insertAtBeginning(int data) {
+        Node newNode = new Node(data);
+        newNode.next = head;
+        head = newNode;
+        System.out.println("Inserted at Beginning: " + data);
+    }
+
+    // 2. End Insertion
+    public void insertAtEnd(int data) {
         Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
@@ -20,9 +25,10 @@ public class SinglyLinkedList {
             while (temp.next != null) temp = temp.next;
             temp.next = newNode;
         }
-        System.out.println("Inserted: " + data);
+        System.out.println("Inserted at End: " + data);
     }
 
+    // 3. Display Logic
     public void display() {
         Node temp = head;
         System.out.print("List: ");
@@ -35,9 +41,9 @@ public class SinglyLinkedList {
 
     public static void main(String[] args) {
         SinglyLinkedList list = new SinglyLinkedList();
-        list.insert(10);
-        list.insert(20);
-        list.insert(30);
+        list.insertAtBeginning(10);
+        list.insertAtEnd(20);
+        list.insertAtEnd(30);
         list.display();
     }
 }

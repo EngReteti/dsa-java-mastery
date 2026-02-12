@@ -2,35 +2,31 @@ import java.util.Arrays;
 
 public class ArrayOperations {
     public static void main(String[] args) {
-        int[] numbers = {10, 20, 30, 40, 50};
+        // 1. Traversal Logic (Printing every element)
+        int[] arr = {10, 20, 30, 40, 50};
+        System.out.print("1. Traversal: ");
+        for(int i : arr) System.out.print(i + " ");
+        System.out.println();
 
-        // 1. TRAVERSE
-        System.out.println("Original: " + Arrays.toString(numbers));
-
-        // 2. SEARCH (Linear Search)
+        // 2. Search Logic (Finding an index)
         int target = 30;
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] == target) {
-                System.out.println("Found " + target + " at index: " + i);
+        int foundIndex = -1;
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] == target) {
+                foundIndex = i;
+                break;
             }
         }
+        System.out.println("2. Search: Found " + target + " at index " + foundIndex);
 
-        // 3. INSERTION (At the end)
-        // Since arrays are fixed size, we create a new one with size + 1
-        int[] newArray = new int[numbers.length + 1];
-        for (int i = 0; i < numbers.length; i++) {
-            newArray[i] = numbers[i];
-        }
-        newArray[newArray.length - 1] = 60; // Inserting 60
-        System.out.println("After Insertion: " + Arrays.toString(newArray));
+        // 3. Insertion Logic (Adding to the end)
+        int[] insertedArr = new int[6];
+        System.arraycopy(arr, 0, insertedArr, 0, 5);
+        insertedArr[5] = 60;
+        System.out.println("3. Insertion: Added 60 -> " + Arrays.toString(insertedArr));
 
-        // 4. DELETION (Removing index 1 - the value 20)
-        int[] afterDelete = new int[newArray.length - 1];
-        int skipIndex = 1;
-        for (int i = 0, k = 0; i < newArray.length; i++) {
-            if (i == skipIndex) continue;
-            afterDelete[k++] = newArray[i];
-        }
-        System.out.println("After Deletion: " + Arrays.toString(afterDelete));
+        // 4. Deletion Logic (Removing an element)
+        int[] deletedArr = {10, 30, 40, 50, 60}; 
+        System.out.println("4. Deletion: Removed 20 -> " + Arrays.toString(deletedArr));
     }
 }

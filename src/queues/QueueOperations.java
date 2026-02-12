@@ -1,50 +1,41 @@
-class Node {
-    int data;
-    Node next;
-    Node(int data) { this.data = data; this.next = null; }
-}
-
 public class QueueOperations {
-    private Node front = null, rear = null;
+    private Node front, rear;
+
+    private class Node {
+        int data;
+        Node next;
+        Node(int data) { this.data = data; }
+    }
 
     public void enqueue(int data) {
         Node newNode = new Node(data);
         if (rear == null) {
             front = rear = newNode;
-        } else {
-            rear.next = newNode;
-            rear = newNode;
-        }
-        System.out.println("Enqueued (Added to Rear): " + data);
-    }
-
-    public void dequeue() {
-        if (front == null) {
-            System.out.println("Queue Underflow");
             return;
         }
-        System.out.println("Dequeued (Removed from Front): " + front.data);
-        front = front.next;
-        if (front == null) rear = null;
+        rear.next = newNode;
+        rear = newNode;
+        System.out.println("Enqueued: " + data);
     }
 
-    public void display() {
-        Node temp = front;
-        System.out.print("Current Queue: ");
-        while (temp != null) {
-            System.out.print(temp.data + " <- ");
-            temp = temp.next;
+    public int dequeue() {
+        if (front == null) {
+            System.out.println("⚠️ Queue Underflow! Cannot dequeue from empty queue.");
+            return -1;
         }
-        System.out.println("End");
+        int value = front.data;
+        front = front.next;
+        if (front == null) rear = null;
+        return value;
     }
 
     public static void main(String[] args) {
         QueueOperations q = new QueueOperations();
         q.enqueue(101);
         q.enqueue(102);
-        q.enqueue(103);
-        q.display();
+        System.out.println("Dequeued: " + q.dequeue());
+        System.out.println("Dequeued: " + q.dequeue());
+        // Edge case test
         q.dequeue();
-        q.display();
     }
 }
