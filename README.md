@@ -1,14 +1,12 @@
 # 🚀 DSA Java Mastery: Logic Laboratory
-![Java](https://img.shields.io/badge/Language-Java-orange) ![Tools](https://img.shields.io/badge/Environment-Termux-blue) ![Status](https://img.shields.io/badge/Status-Complete-green)
+![Java](https://img.shields.io/badge/Language-Java-orange) ![Environment](https://img.shields.io/badge/Tools-Termux-blue)
 
-![Java](https://img.shields.io/badge/Language-Java-orange) ![Tools](https://img.shields.io/badge/Environment-Termux-blue) ![Status](https://img.shields.io/badge/Status-Complete-green)
-
-A high-performance repository demonstrating the implementation of fundamental Data Structures and Algorithms (DSA) using Java.
+A professional repository dedicated to the implementation and optimization of fundamental Data Structures and Algorithms (DSA) using Java. This project serves as a technical showcase of algorithmic efficiency, memory management, and clean code principles.
 
 ## 🎯 Technical Objectives
-* **Algorithm Optimization:** Focus on Big O notation and time/space complexity.
-* **Memory Management:** Custom implementations of Linked Lists, Trees, and Graphs.
-* **Technical Proficiency:** Mastery of Object-Oriented Programming (OOP) in Java.
+* **Algorithm Optimization:** Strategic implementation of search and sort logic with a focus on Big O complexity.
+* **Architecture:** Building custom, modular data structures from the ground up to understand memory allocation.
+* **Defensive Engineering:** Implementing robust edge-case handling, such as stack/queue underflow protection.
 
 ## 📊 Complexity Analysis (Efficiency Standards)
 
@@ -37,27 +35,32 @@ A high-performance repository demonstrating the implementation of fundamental Da
 
 ---
 
-## 🚀 Getting Started
-
-### Installation & Execution
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/dsa-java-mastery.git
-   cd dsa-java-mastery
-   ```
-
-2. **Run a module (e.g., Graphs):**
-   ```bash
-   javac src/graphs/GraphOperations.java
-   java -cp src graphs.GraphOperations
-   ```
-
 ## 💡 Technical Challenges & Solutions
 
-### 1. Robust Data Handling
-**Challenge:** Initial implementations would crash (NullPointerException) when attempting to remove elements from empty Stacks or Queues.
-**Solution:** Implemented **Defensive Programming** by adding state-checks. Now, the system returns a graceful "Underflow" warning instead of terminating.
+### 1. Robust State Management
+**Challenge:** Early iterations lacked validation, leading to `NullPointerException` when performing operations on empty data structures.
+**Solution:** Integrated state-check logic across all LIFO/FIFO structures. Now, the system provides meaningful feedback (Underflow/Overflow warnings) instead of crashing.
 
-### 2. Algorithmic Efficiency
-**Challenge:** Choosing between Linear and Binary Search for data retrieval.
-**Solution:** Optimized retrieval by implementing Binary Search for sorted datasets, reducing time complexity from (n)$ to (\log n)$.
+### 2. Path & Classpath Resolution in CLI
+**Challenge:** Executing Java files within nested directory structures caused `NoClassDefFoundError` due to package naming conflicts.
+**Solution:** Standardized the project architecture using a clean source root (`src`) and utilized the `-cp` (classpath) flag for reliable execution from the terminal.
+
+---
+
+## 🚀 Getting Started
+
+### Installation
+```bash
+git clone https://github.com/YOUR_USERNAME/dsa-java-mastery.git
+cd dsa-java-mastery
+```
+
+### Execution Example
+To run the **Graph BFS/DFS** logic:
+```bash
+javac src/graphs/GraphOperations.java
+java -cp src graphs.GraphOperations
+```
+
+---
+*Developed with a focus on algorithmic excellence in the Termux Linux environment.*
