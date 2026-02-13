@@ -1,22 +1,22 @@
 # 🚀 DSA Java Mastery: Logic Laboratory
 ![Java](https://img.shields.io/badge/Language-Java-orange) ![Environment](https://img.shields.io/badge/Tools-Termux-blue)
 
-A professional repository dedicated to the implementation and optimization of fundamental Data Structures and Algorithms (DSA) using Java. This project serves as a technical showcase of algorithmic efficiency, memory management, and clean code principles.
+A professional repository showcasing the implementation of fundamental Data Structures and Algorithms (DSA). This project focuses on building modular, efficient, and robust logic from the ground up using Java.
 
 ## 🎯 Technical Objectives
-* **Algorithm Optimization:** Strategic implementation of search and sort logic with a focus on Big O complexity.
-* **Architecture:** Building custom, modular data structures from the ground up to understand memory allocation.
-* **Defensive Engineering:** Implementing robust edge-case handling, such as stack/queue underflow protection.
+* **Algorithmic Efficiency:** Implementing search and sort logic with a strict focus on Big O complexity.
+* **Structural Architecture:** Developing custom, non-linear data structures (Trees, Graphs) to master memory management.
+* **Defensive Programming:** Ensuring code stability through robust edge-case handling and state validation.
 
-## 📊 Complexity Analysis (Efficiency Standards)
+## 📊 Complexity Analysis
 
-| Data Structure | Best Case | Average Case | Space Complexity |
+| Data Structure | Operation | Average Complexity | Space Complexity |
 | :--- | :--- | :--- | :--- |
-| **Array (Search)** | (1)$ | (n)$ | (1)$ |
-| **Binary Search** | (1)$ | (\log n)$ | (1)$ |
-| **Bubble Sort** | (n)$ | (n^2)$ | (1)$ |
-| **BST (Search)** | (1)$ | (\log n)$ | (n)$ |
-| **Graph (BFS/DFS)** | (V+E)$ | (V+E)$ | (V)$ |
+| **Array** | Search | (n)$ | (1)$ |
+| **Binary Search** | Search | (\log n)$ | (1)$ |
+| **Singly Linked List** | Insertion | (1)$ | (n)$ |
+| **Binary Search Tree** | Traversal | (n)$ | (n)$ |
+| **Graph** | BFS/DFS | (V+E)$ | (V)$ |
 
 ---
 
@@ -37,30 +37,28 @@ A professional repository dedicated to the implementation and optimization of fu
 
 ## 💡 Technical Challenges & Solutions
 
-### 1. Robust State Management
-**Challenge:** Early iterations lacked validation, leading to `NullPointerException` when performing operations on empty data structures.
-**Solution:** Integrated state-check logic across all LIFO/FIFO structures. Now, the system provides meaningful feedback (Underflow/Overflow warnings) instead of crashing.
+### 1. Handling Underflow States
+**Challenge:** Early logic would trigger a `NullPointerException` when attempting to pop or dequeue from empty structures.
+**Solution:** Implemented defensive "empty checks" that return a graceful warning message, ensuring the program remains active and user-friendly.
 
-### 2. Path & Classpath Resolution in CLI
-**Challenge:** Executing Java files within nested directory structures caused `NoClassDefFoundError` due to package naming conflicts.
-**Solution:** Standardized the project architecture using a clean source root (`src`) and utilized the `-cp` (classpath) flag for reliable execution from the terminal.
-
----
-
-## 🚀 Getting Started
-
-### Installation
-```bash
-git clone https://github.com/YOUR_USERNAME/dsa-java-mastery.git
-cd dsa-java-mastery
-```
-
-### Execution Example
-To run the **Graph BFS/DFS** logic:
-```bash
-javac src/graphs/GraphOperations.java
-java -cp src graphs.GraphOperations
-```
+### 2. Modular Classpath Execution
+**Challenge:** Managing various Java files across different sub-directories led to compilation errors regarding package names.
+**Solution:** Adopted a standardized source root (`src`) and utilized the `java -cp src` command to allow independent execution of any structure from the project root.
 
 ---
-*Developed with a focus on algorithmic excellence in the Termux Linux environment.*
+
+## 🚀 How to Run
+1. **Clone the Repo:**
+   ```bash
+   git clone https://github.com/YOUR_USERNAME/dsa-java-mastery.git
+   cd dsa-java-mastery
+   ```
+
+2. **Compile and Execute (Example: Queues):**
+   ```bash
+   javac src/queues/QueueOperations.java
+   java -cp src queues.QueueOperations
+   ```
+
+---
+*Open for further expansion. Built with precision in a Termux Linux environment.*
