@@ -57,7 +57,7 @@ A professional collection of Data Structures and Algorithms implemented in Java.
 ## 🚀 How to Execute
 1. **Clone the project:**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/dsa-java-mastery.git
+   git clone https://github.com/EngReteti/dsa-java-mastery.git
    cd dsa-java-mastery
    ```
 2. **Run a specific module (e.g., Searching):**
