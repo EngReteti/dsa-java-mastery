@@ -1,0 +1,9 @@
+# Ignore all Java compiled bytecode
+*.class
+
+# Ignore temporary editor files
+*.swp
+*~
+
+# Ignore OS-specific files
+.DS_Store
