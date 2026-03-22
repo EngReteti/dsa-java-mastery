@@ -13,7 +13,6 @@ public class BinarySearchTree {
 
     Node root;
 
-    // Insert a key into the BST
     void insert(int key) {
         root = insertRec(root, key);
     }
@@ -30,25 +29,46 @@ public class BinarySearchTree {
         return root;
     }
 
-    // Search for a specific key
-    boolean search(int key) {
-        return searchRec(root, key);
+    // --- NEW: Tree Traversal Logic ---
+    void inOrder(Node root) {
+        if (root != null) {
+            inOrder(root.left);
+            System.out.print(root.key + " ");
+            inOrder(root.right);
+        }
     }
 
-    boolean searchRec(Node root, int key) {
-        if (root == null) return false;
-        if (root.key == key) return true;
-        return key < root.key ? searchRec(root.left, key) : searchRec(root.right, key);
+    void preOrder(Node root) {
+        if (root != null) {
+            System.out.print(root.key + " ");
+            preOrder(root.left);
+            preOrder(root.right);
+        }
+    }
+
+    void postOrder(Node root) {
+        if (root != null) {
+            postOrder(root.left);
+            postOrder(root.right);
+            System.out.print(root.key + " ");
+        }
     }
 
     public static void main(String[] args) {
-        BinarySearchTree bst = new BinarySearchTree();
-        bst.insert(50);
-        bst.insert(30);
-        bst.insert(70);
-        bst.insert(20);
-        
-        System.out.println("Searching for 20: " + bst.search(20));
-        System.out.println("Searching for 90: " + bst.search(90));
+        BinarySearchTree tree = new BinarySearchTree();
+        tree.insert(50);
+        tree.insert(30);
+        tree.insert(20);
+        tree.insert(40);
+        tree.insert(70);
+        tree.insert(60);
+        tree.insert(80);
+
+        System.out.print("In-order: ");
+        tree.inOrder(tree.root);
+        System.out.println("\nPre-order: ");
+        tree.preOrder(tree.root);
+        System.out.println("\nPost-order: ");
+        tree.postOrder(tree.root);
     }
 }
