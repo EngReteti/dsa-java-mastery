@@ -4,7 +4,6 @@ public class BinarySearchTree {
     class Node {
         int key;
         Node left, right;
-
         public Node(int item) {
             key = item;
             left = right = null;
@@ -13,23 +12,45 @@ public class BinarySearchTree {
 
     Node root;
 
-    void insert(int key) {
-        root = insertRec(root, key);
-    }
+    void deleteKey(int key) { root = deleteRec(root, key); }
 
-    Node insertRec(Node root, int key) {
-        if (root == null) {
-            root = new Node(key);
-            return root;
-        }
+    Node deleteRec(Node root, int key) {
+        if (root == null) return root;
+
         if (key < root.key)
-            root.left = insertRec(root.left, key);
+            root.left = deleteRec(root.left, key);
         else if (key > root.key)
-            root.right = insertRec(root.right, key);
+            root.right = deleteRec(root.right, key);
+        else {
+            // Node with only one child or no child
+            if (root.left == null) return root.right;
+            else if (root.right == null) return root.left;
+
+            // Node with two children: Get the inorder successor
+            root.key = minValue(root.right);
+            // Delete the inorder successor
+            root.right = deleteRec(root.right, root.key);
+        }
         return root;
     }
 
-    // --- NEW: Tree Traversal Logic ---
+    int minValue(Node root) {
+        int minv = root.key;
+        while (root.left != null) {
+            minv = root.left.key;
+            root = root.left;
+        }
+        return minv;
+    }
+
+    void insert(int key) { root = insertRec(root, key); }
+    Node insertRec(Node root, int key) {
+        if (root == null) return new Node(key);
+        if (key < root.key) root.left = insertRec(root.left, key);
+        else if (key > root.key) root.right = insertRec(root.right, key);
+        return root;
+    }
+
     void inOrder(Node root) {
         if (root != null) {
             inOrder(root.left);
@@ -38,37 +59,24 @@ public class BinarySearchTree {
         }
     }
 
-    void preOrder(Node root) {
-        if (root != null) {
-            System.out.print(root.key + " ");
-            preOrder(root.left);
-            preOrder(root.right);
-        }
-    }
-
-    void postOrder(Node root) {
-        if (root != null) {
-            postOrder(root.left);
-            postOrder(root.right);
-            System.out.print(root.key + " ");
-        }
-    }
-
     public static void main(String[] args) {
         BinarySearchTree tree = new BinarySearchTree();
-        tree.insert(50);
-        tree.insert(30);
-        tree.insert(20);
-        tree.insert(40);
-        tree.insert(70);
-        tree.insert(60);
-        tree.insert(80);
+        int[] keys = {50, 30, 20, 40, 70, 60, 80};
+        for(int k : keys) tree.insert(k);
 
-        System.out.print("In-order: ");
+        System.out.println("Original Tree (In-order):");
         tree.inOrder(tree.root);
-        System.out.println("\nPre-order: ");
-        tree.preOrder(tree.root);
-        System.out.println("\nPost-order: ");
-        tree.postOrder(tree.root);
+        
+        System.out.println("\n\nDeleting 20 (Leaf)...");
+        tree.deleteKey(20);
+        tree.inOrder(tree.root);
+
+        System.out.println("\n\nDeleting 30 (One child)...");
+        tree.deleteKey(30);
+        tree.inOrder(tree.root);
+
+        System.out.println("\n\nDeleting 50 (Two children/Root)...");
+        tree.deleteKey(50);
+        tree.inOrder(tree.root);
     }
 }
