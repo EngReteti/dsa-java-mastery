@@ -2,6 +2,7 @@ package leetcode.array;
 
 import java.util.HashMap;
 import java.util.Arrays;
+// Solution for Problem 0001: Two Sum
 
 /**
  * 0001/1000 - Two Sum
