@@ -1,70 +1,45 @@
-# 🚀 DSA Java Mastery: Logic Laboratory
-![Java](https://img.shields.io/badge/Language-Java-orange) ![Environment](https://img.shields.io/badge/Tools-Termux-blue)
+# 🔱 Java DSA Mastery: The 1,000-Problem Odyssey
 
-A professional collection of Data Structures and Algorithms implemented in Java. This project showcases a deep understanding of memory management, algorithmic optimization, and defensive programming.
-
-## 🎯 Project Objectives
-* **Modular Logic:** Building data structures from scratch to understand underlying pointer/reference mechanics.
-* **Efficiency Analysis:** Evaluating every algorithm through the lens of Time and Space complexity ($ notation).
-* **Code Resilience:** Developing "crash-proof" logic that handles empty states and invalid inputs gracefully.
-
-## 📊 Technical Complexity Analysis
-
-| Structure/Algorithm | Best Case | Average Case | Space Complexity |
-| :--- | :--- | :--- | :--- |
-| **Array Search** | (1)$ | (n)$ | (1)$ |
-| **Binary Search** | (1)$ | (\log n)$ | (1)$ |
-| **Bubble Sort** | (n)$ | (n^2)$ | (1)$ |
-| **Binary Tree** | (1)$ | (\log n)$ | (n)$ |
-| **Graph (BFS/DFS)** | (V+E)$ | (V+E)$ | (V)$ |
+A professional technical archive documenting the transition from fundamental engineering principles to elite-level competitive programming. This repository serves as both a personal laboratory and a structured resource for the global developer community.
 
 ---
 
-## 📸 System Gallery (Proof of Work)
-
-| Feature | Visual Preview |
-| :--- | :--- |
-| **Array Operations** | ![Array Proof](docs/arrays_run.jpg) |
-| **Linked List Operations** | ![Singly Linked List Proof](docs/linkedlists_run.jpg) |
-| **Stack (LIFO) Logic** | ![Stack Proof](docs/stacks_run.jpg) |
-| **Queue (FIFO) Logic** | ![Queue Proof](docs/queues_run.jpg) |
-| **Searching Algorithms** | ![Search Proof](docs/searching_run.jpg) |
-| **Sorting Algorithms** | ![Sort Proof](docs/sorting_run.jpg) |
-| **Tree Traversals** | ![Tree Proof](docs/trees_run.jpg) |
-| **Graph BFS/DFS** | ![Graph Proof](docs/graphs_run.jpg) |
+## 🎯 The Mission
+To solve **1,000+ challenges** across 72 computer science domains, unlocking critical thinking and architectural creativity. This journey is built on the belief that consistency is the only bridge between a coder and an engineer.
 
 ---
 
-## 💡 Engineering Challenges & Solutions
+## 🏗 Project Architecture
 
-### 1. The "Empty Structure" Vulnerability
-* **Challenge:** Initial Stack and Queue implementations would crash with a `NullPointerException` if a "Pop" or "Dequeue" was attempted on empty data.
-* **Analysis:** The code was attempting to access memory addresses that didn't exist (null references).
-* **Solution:** Implemented **Defensive Programming**. I added conditional state-checks (`if (top == null)`) that return a custom "Underflow" warning. This keeps the application running instead of terminating unexpectedly.
+The workspace is decoupled into two specialized environments:
 
-### 2. Algorithmic Decision Making
-* **Challenge:** Determining the most efficient way to locate data within a growing dataset.
-* **Analysis:** Linear search becomes increasingly slow ((n)$) as the dataset expands.
-* **Solution:** Implemented **Binary Search**. By ensuring data is sorted first, I utilized the "Divide and Conquer" strategy to cut search time to (\log n)$, significantly improving performance for large arrays.
+### 1. Fundamentals Lab (`/src`)
+**The Science:** Deep-dive implementations of core data structures to understand memory management and internal logic.
+* **Linear:** Linked Lists, Stacks, Queues.
+* **Hierarchical:** Binary Search Trees, Max-Heaps, AVL Trees.
+* **Algorithms:** Sorting ($O(n \log n)$), Searching, and Graph theory.
 
-### 3. CLI Environment Pathing
-* **Challenge:** Running Java files from a nested directory structure caused `NoClassDefFoundError` in the Termux environment.
-* **Analysis:** The Java Virtual Machine (JVM) was looking for class files relative to the current folder rather than the package root.
-* **Solution:** Restructured the project using a standardized `src` root and executed all modules using the classpath flag (`java -cp src`). This ensures absolute path reliability across any terminal.
-
----
-
-## 🚀 How to Execute
-1. **Clone the project:**
-   ```bash
-   git clone https://github.com/EngReteti/dsa-java-mastery.git
-   cd dsa-java-mastery
-   ```
-2. **Run a specific module (e.g., Searching):**
-   ```bash
-   javac src/searching/SearchAlgorithms.java
-   java -cp src searching.SearchAlgorithms
-   ```
+### 2. Problem-Solving Lab (`/leetcode`)
+**The Practice:** Applying structures to solve real-world constraints categorized by topic.
+* **Standard:** `P[Number]_[Name].java`
+* **Methodology:** Prioritizing $O(n)$ time and $O(1)$ space efficiency.
+* **Topics:** 72 folders (Arrays, Strings, Dynamic Programming, etc.).
 
 ---
-*Maintained and expanded for continuous professional growth.*
+
+## 🛠 Technical Workflow
+
+* **Language:** Java 17+
+* **Commit Standard:** **Conventional Commits** (e.g., `feat(array): solve #1 Two Sum`)
+* **Philosophy:** "Slow is smooth, smooth is fast." Deep pattern recognition over speed.
+
+```bash
+# Standard Execution Pattern:
+javac leetcode/array/P0001_TwoSum.java
+java -cp . leetcode.array.P0001_TwoSum
+
+## 🤝 Giving Back & Uplifting
+​This repository is an open-source gift. If you are learning, explore the /src folder to see how things work "under the hood," then study the /leetcode folder to see those concepts in action. Use these solutions to challenge your own logic and accelerate your growth.
+​"We rise by lifting others."
+
+If you find it helpful,please leave a star⭐
