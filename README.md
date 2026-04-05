@@ -27,6 +27,11 @@ The workspace is decoupled into two specialized environments:
 * **Methodology:** Prioritizing $O(n)$ time and $O(1)$ space efficiency.
 
 ---
+​
+### 😊 Giving Back & Uplifting
+​I have documented this journey as a way to give back to the community and uplift fellow peeps. This repository is an open-source gift.
+​If you are learning, explore the /src folder to see how things work "under the hood," then study /leetcode to see those concepts in action. Use these solutions to challenge your own logic, unlock your creativity, and accelerate your growth.
+​"We rise by lifting others. If you find this helpful, leave a star! ⭐"
 
 ## 🛠 Technical Workflow
 
@@ -39,9 +44,4 @@ The workspace is decoupled into two specialized environments:
 javac leetcode/array/P0001_TwoSum.java
 java -cp . leetcode.array.P0001_TwoSum
 
----
 
-### ​😊 Giving Back & Uplifting
-​I have documented this journey as a way to give back to the community and uplift fellow peeps. This repository is an open-source gift.
-​If you are learning, explore the /src folder to see how things work "under the hood," then study /leetcode to see those concepts in action. Use these solutions to challenge your own logic, unlock your creativity, and accelerate your growth.
-​"We rise by lifting others. If you find this helpful, leave a star! ⭐"
