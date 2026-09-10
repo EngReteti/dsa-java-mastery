@@ -7,7 +7,6 @@ A professional technical archive documenting the transition from fundamental eng
 ## The Vision
 I am thinking outside the box to master and explore DSA concepts that boost my critical thinking and problem-solving skills. By unlocking my mind to creativity and new ideas, I aim to solve **1,000+ challenges** across 72 computer science domains. 
 
-> "Consistency is the only bridge between a coder and an engineer."
 
 ---
 
