@@ -4,14 +4,14 @@ A professional technical archive documenting the transition from fundamental eng
 
 ---
 
-## 🎯 The Vision
+## The Vision
 I am thinking outside the box to master and explore DSA concepts that boost my critical thinking and problem-solving skills. By unlocking my mind to creativity and new ideas, I aim to solve **1,000+ challenges** across 72 computer science domains. 
 
 > "Consistency is the only bridge between a coder and an engineer."
 
 ---
 
-## 🏗 Project Architecture
+## Project Architecture
 
 The workspace is decoupled into two specialized environments:
 
@@ -28,7 +28,7 @@ The workspace is decoupled into two specialized environments:
 
 ---
 ​
-### 😊 Giving Back & Uplifting
+### Giving Back & Uplifting
 ​I have documented this journey as a way to give back to the community and uplift fellow peeps. This repository is an open-source gift.
 ​If you are learning, explore the /src folder to see how things work "under the hood," then study /leetcode to see those concepts in action. Use these solutions to challenge your own logic, unlock your creativity, and accelerate your growth.
 ​
@@ -36,7 +36,7 @@ The workspace is decoupled into two specialized environments:
 
 ---
 
-## 🛠 Technical Workflow
+## Technical Workflow
 
 * **Language:** Java 17+
 * **Commit Standard:** **Conventional Commits** (e.g., `feat(array): solve #1 Two Sum`)
