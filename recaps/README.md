@@ -2,7 +2,7 @@
 
 This file is the single central recap for every completed topic in this repository. Each section links directly to its matching folder inside leetcode, and breaks down what was learned, why those problems were chosen, where the pattern applies in real interviews, and how to prioritize revision time, both for opportunities within Kenya and worldwide.
 
-## Array Folder
+## 1. Array Folder
 
 Folder link: [leetcode/array](../leetcode/array)
 
